@@ -1,9 +1,13 @@
 <div class="app-component">
     <div class="header">
-        Amy Jeppson Portfolio.
+        <div class="title">Amy Jeppson Portfolio.</div>
         <div class="navigation">
-            <div>Hello World</div>
-            <div>Basic Javascript</div>
+            <div class="clickable" (click)="helloWorld()">Hello World</div>
+            <div class="clickable" (click)="script()">Basic Javascript</div>
         </div>
+    </div>
+
+    <div class="stuff-box">
+        <div *ngIf="showHelloWorld && !showJS" class="hello-world" [ngStyle]="{'color': helloColor}">Hello World!</div>
     </div>
 </div>

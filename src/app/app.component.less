@@ -1,16 +1,46 @@
-@purp: purple;
+@import: '../main.less';
 
 .app-component{
+    .title{
+        padding:12px;
+        color: darkslategray;
+        font-weight: lighter;
+    }
     .header{
-        height: 40px;
         width: 100%;
-        border: 1px solid red;
         display: flex;
         flex-direction: column;
+        font-size: 24px;
+        background-color: white;
+        opacity: .9;
     }
     .navigation{
-        display: flex;
-        height: 30px;
         flex-direction: row;
+        display: flex;
+        background-color: lightseagreen;
+        color: white;
+        div{
+            font-size: 16px;
+            align-items: center;
+            padding: 10px;
+            margin: 0px 2px;
+            font-weight: lighter;
+            &:hover{
+                background-color: cadetblue;
+            }
+        }
+    }
+    .stuff-box{
+        .hello-world{
+            height: 100px;
+            position: absolute;
+            right: 0px;
+            top: 260px;
+            font-size: 40px;
+            text-align: center;
+            right: 200px;
+        }
     }
 }
+
+//Photo by Jo Jo on Unsplash
