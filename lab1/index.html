@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- Custom styles-->
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">Hi! I'm Amy. I've been developing websites for 8 years and
+                Angular web applications for the last 2 of those. I have a passion for squeaky clean
+                CSS and UX design.</p>
+          </div>
+          <div class="col-sm-4 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="https://github.com/AmyClawson" target="_blank" class="text-white">GitHub Profile</a></li>
+              <li><a href="https://www.linkedin.com/in/amy-jeppson-11355a51/" target="_blank" class="text-white">LinkedIn</a></li>
+              <li><a href="mailto:amelia.jepp@example.com?Subject=Hello" target="_top">Email Me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand">Portfolio</a>
+        <button class="navbar-toggler clickable" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Amelia Jeppson</h1>
+        <p class="lead text-muted">Application Developer  &#183;  CSS/LESS Guru  &#183;  Enthusiast</p>
+        <p>
+          <a href="https://github.com/AmyClawson" target="_blank" class="btn btn-primary">Github</a>
+          <a href="https://www.linkedin.com/in/amy-jeppson-11355a51/" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+    <div class="album text-muted">
+      <div class="container">
+        <div class="row">
+            <div class="card clickable">
+              <a href="http://www.sewingwithcathy.com/#/" target="_blank" class="no-style">
+                  <img src="swc.png" alt="swc">
+              </a>
+              <p class="card-title">Sewing With Cathy</p>
+              <p class="card-text">Web application built in AngularJS with Firebase for Cathy Clawson. This is her business website.</p>
+            </div>
+            <div class="card clickable">
+              <a href="https://www.mtc.byu.edu/" target="_blank" class="no-style">
+                  <img src="mtc.png" alt="mtc">
+              </a>
+              <p class="card-title">MTC Homepage</p>
+              <p class="card-text">Designed and built the new homepage for the Missionary Training Center along with a development team.</p>
+            </div>
+            <div class="card clickable">
+              <a href="http://52.14.249.134/index.html" target="_blank" class="no-style">
+                  <img src="cactus.png" alt="personal site">
+              </a>
+              <p class="card-title">Miscellaneous Assignments</p>
+              <p class="card-text">The home of my CS260 assignments.</p>
+            </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="big-card">
+              <p class="card-title">Education</p>
+              <p class="card-text">
+                  <ul>
+                      <li>
+                          <span class="job">Bachelor of Science in Geology</span>
+                          <span class="bossman">Brigham Young University</span>
+                          <span class="date">Graduation: April 2018</span>
+                      </li>
+                      <li>
+                          <span class="job">Minor in Computer Science</span>
+                          <span class="bossman">Brigham Young University</span>
+                      </li>
+                  </ul>
+              </p>
+            <p class="card-title">Work Experience</p>
+            <p class="card-text">
+                <ul>
+                    <li>
+                        <div class="date">April 2015-Present</div>
+                        <div class="job">Senior Student Developer</div>
+                        <div class="bossman">Missionary Training Center</div>
+                    </li>
+                    <li>
+                        <div class="date">July 2015-Present</div>
+                        <div class="job">Freelance Developer</div>
+                        <div class="bossman">Self Employeed</div>
+                    </li>
+                    <li>
+                        <div class="date">April 2012-August 2015</div>
+                        <div class="job">Webmaster</div>
+                        <div class="bossman">Datafest Technologies, Inc.</div>
+                    </li>
+                </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-muted">
+      <div class="container">
+        <a id="date" onclick="document.getElementById('date').innerHTML = Date()" class="btn btn-primary clickable">
+            Click to display date!
+        </a>
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+  <!--Photo by Cesar Lopez Rivadeneira on Unsplash-->
+</html>
