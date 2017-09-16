@@ -2,12 +2,20 @@
     <div class="header">
         <div class="title">Amy Jeppson Portfolio.</div>
         <div class="navigation">
-            <div class="clickable" (click)="helloWorld()">Hello World</div>
-            <div class="clickable" (click)="script()">Basic Javascript</div>
+            <div class="clickable" (click)="helloWorld()">Hello World & Basic Javascript</div>
+            <div class="clickable" (click)="others()">Other Projects</div>
         </div>
     </div>
 
     <div class="stuff-box">
-        <div *ngIf="showHelloWorld && !showJS" class="hello-world" [ngStyle]="{'color': helloColor}">Hello World!</div>
+        <div *ngIf="showHelloWorld && !showOthers && switchColor()"
+            [ngStyle]="{'color': helloColor}">
+                <div>Hello World!</div>
+                <div class="disclaimer clickable" (click)="helloWorld()">(Click me to make it all go away....)</div>
+        </div>
+        <div *ngIf="!showHelloWorld && showOthers" class="link clickable">
+            <a class="swc" href="http://www.sewingwithcathy.com" target="_blank">Sewing With Cathy</a>
+            <div class="description">A website dedicated to my mother's sewing business run from our home in Salt Lake City. Written in AngularJS using Firebase</div>
+        </div>
     </div>
 </div>

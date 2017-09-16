@@ -31,14 +31,45 @@
         }
     }
     .stuff-box{
-        .hello-world{
-            height: 100px;
-            position: absolute;
-            right: 0px;
-            top: 260px;
-            font-size: 40px;
-            text-align: center;
-            right: 200px;
+        height: 100px;
+        position: absolute;
+        top: 260px;
+        font-size: 40px;
+        text-align: center;
+        right: 150px;
+        .disclaimer{
+            font-size: 10px;
+            color: darkgray;
+            margin: 20px 0px;
+        }
+        .link{
+            font-size: 24px;
+            color: #595959;
+            background-color: beige;
+            font-weight: lighter;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 2px 2px 7px -1px #b3b3b3;
+            transition: box-shadow 250ms;
+            width: 300px;
+
+            &:hover{
+                box-shadow: 3px 3px 12px 1px #b3b3b3;
+                background-color: #eeeec3;
+            }
+
+            .swc, .swc:active, .swc:hover, .swc:visited{
+                text-decoration: none !important;
+                border: none;
+                color: #595959 !important;
+            }
+
+            .description{
+                font-size: 12px;
+                padding-top: 10px;
+                border-top: 1px solid slategray;
+                margin-top: 10px;
+            }
         }
     }
 }

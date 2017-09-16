@@ -8,15 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 
     showHelloWorld:boolean = false;
+    showOthers: boolean = false;
     currentColor = 0;
     helloColor:string;
 
     ngOnInit(){
-        this.switchColor();
+
     }
 
     helloWorld(){
         this.showHelloWorld = !this.showHelloWorld;
+        this.showOthers = false;
+    }
+
+    others(){
+        this.showOthers = !this.showOthers;
+        this.showHelloWorld = false;
     }
 
     // helloColor(){
@@ -28,7 +35,6 @@ export class AppComponent implements OnInit {
     //     return color;
     // }
 
-
     switchColor() {
         let colors = ["red", "green", "blue", "purple", "yellow", "orange"];
         if (this.currentColor >= colors.length){
@@ -36,7 +42,7 @@ export class AppComponent implements OnInit {
         }
         this.helloColor = colors[this.currentColor++];
         setTimeout(this.switchColor, 50);
-    }
 
-    switchColor();
+        return true;
+    }
 }
