@@ -1,0 +1,113 @@
+body {
+    min-height: 75rem;
+}
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+.btn-primary:hover{
+    background-color: #20b2aa;
+    border-color: #20b2aa;
+    opacity: .9;
+}
+.album {
+    min-height: 50rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f7f7f7;
+}
+.card-title{
+    color:darkslategray;
+}
+.clickable:hover{
+    cursor:pointer;
+}
+
+.form-inline{
+    margin: 20px 0px;
+}
+.form-control{
+    margin-left: 10px;
+}
+.jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+.jumbotron-heading {
+    color: floralwhite;
+    font-weight: lighter;
+}
+.card {
+    float: left;
+    width: 33.333%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+}
+.big-card {
+    float: left;
+    width: 100%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: .25rem;
+}
+.no-style > img {
+    margin-bottom: .75rem;
+    height: 280px;
+    width: 356px;
+    border-radius: 10px;
+    transition: opacity 500ms;
+}
+.no-style > img:hover{
+    opacity:.5;
+}
+.card-text {
+    font-size: 85%;
+}
+
+.btn-primary{
+    background-color: #20b2aa;
+    border-color: #20b2aa;
+}
+a{
+    color: #20b2aa;
+}
+footer p {
+    margin-bottom: .25rem;
+}
+.job{
+    font-weight: bold;
+    font-size: 14px;
+    display:inline-block;
+}
+.bossman{
+    font-size: 12px;
+    display:inline-block;
+}
+.date{
+    float:right;
+    font-size: 12px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    clear:both;
+}
